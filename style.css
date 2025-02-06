@@ -1,0 +1,222 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #ffff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  margin: 50px;
+}
+.container .left-side {
+  position: relative;
+  background: #121a2d;
+  padding: 30px;
+}
+.profileText {
+  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.profileText .imgBox {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profileText .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.profileText h2 {
+  color: #ffff;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4rem;
+}
+.profileText h2 span {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+.contactInfo {
+  padding-top: 40px;
+}
+.titile {
+  color: #ffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.contactInfo ul {
+  position: relative;
+}
+.contactInfo ul li {
+  list-style-type: none;
+}
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+.contactInfo ul li span {
+  font-weight: 200;
+  color: #ffff;
+}
+.contactInfo.education li {
+  margin-bottom: 15px;
+}
+.contactInfo.education h4:nth-child(1) {
+  color: #03a9f4;
+  font-weight: 500;
+}
+.contactInfo.education h4 {
+    color: white;
+    font-weight: 300;
+}
+.contactInfo.language{
+    color: white;
+    font-weight: 300;
+}
+.contactInfo.language .percentage{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background:black ;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.contactInfo.language .percentage div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.contactInfo.social-media span a{
+  text-decoration: none;
+  color:white
+}
+.container .right-side {
+  position: relative;
+  background: #212b4b;
+  padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #03a9f4;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+p{
+    color: black;
+}
+.about.experience li{
+    margin-top: 10px;
+    margin-left: 16px;
+}
+.about.experience h4{
+    color: #03a9f4;
+}
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4{
+    margin: 5px;
+    text-transform: uppercase;
+    color: lightgray;
+    font-weight: 500;
+}
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #121a2d;
+}
+.skills .box .percent div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.interest ul li{
+    list-style: none;
+    color:lightgray;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa-solid{
+    font-size: 18px;
+    color: #03a9f4;
+    width: 20px;
+}
+@media (max-width:1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+}
+@media (max-width:600px){
+    
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* 001d3d left-side
+3a506b right-side
+5bc0be heaging */

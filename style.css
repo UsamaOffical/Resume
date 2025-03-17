@@ -13,6 +13,12 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+#name{
+  margin: 20px 0 20px 0 ;
+}
+#name span {
+  padding: 20px 0 10px 0;
+}
 .container {
   position: relative;
   width: 100%;
@@ -26,7 +32,9 @@ body {
 }
 .container .left-side {
   position: relative;
+  /* background: #121a2d; */
   background: #121a2d;
+  /* background: #4767b3; */
   padding: 30px;
 }
 .profileText {
@@ -44,6 +52,7 @@ body {
   width: 250px;
   border-radius: 50%;
   overflow: hidden;
+  border: 3px solid #03a9f4
 }
 .profileText .imgBox img {
   position: absolute;
@@ -51,8 +60,14 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
+/* #img-bg{
+  position: relative;
+  height: 25px;
+  width: 25px;
+
+} */
 .profileText h2 {
   color: #ffff;
   font-size: 1.5rem;
@@ -129,8 +144,15 @@ body {
 }
 .container .right-side {
   position: relative;
-  background: #212b4b;
+  /* background: #212b4b; */
+  background: white;
   padding: 40px;
+}
+.container .right-side p{
+  color: #121a2d;
+}
+.container .right-side ul li{
+  color:#121a2d
 }
 .about{
     margin-bottom: 50px;
@@ -165,7 +187,7 @@ p{
 .skills .box h4{
     margin: 5px;
     text-transform: uppercase;
-    color: lightgray;
+    color: #121a2d;
     font-weight: 500;
 }
 .skills .box .percent{
